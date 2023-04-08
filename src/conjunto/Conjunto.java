@@ -125,13 +125,24 @@ public class Conjunto {
             actual=actual.getSiguiente();
             }
         }
-        // Completar
-        return mayor;   // Línea puesta para evitar error. Eliminarla al codificar el método
+        return mayor;
     }
 
     public Conjunto subconjunto(int inferior, int superior) {
+        Conjunto sub = new Conjunto();
+        Nodo actual=inicio;
+        if(inferior>superior){
+            int aux;
+            aux=superior;
+            superior=inferior;
+            inferior= aux;
+        }
+        //comprobar el primero
+        while(actual!=null&& actual.getDato()<=superior){}
+        //if dato >= inferior -- > insertar en sub
+        //if dato <= superior -- > insertar en sub
         // Completar
-        return null;   // Línea puesta para evitar error. Eliminarla al codificar el método
+        return sub;
     }
 
     public boolean equals(Conjunto conjunto) {
