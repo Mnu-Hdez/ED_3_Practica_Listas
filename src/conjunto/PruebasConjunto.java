@@ -16,6 +16,8 @@ public class PruebasConjunto {
        for(int i=0;i<array.length;i++){
            System.out.print(array[i]+"  ");
        }
+        System.out.println();
+        System.out.println("El mayor elemento es: "+test.mayor());
     }
 
 }

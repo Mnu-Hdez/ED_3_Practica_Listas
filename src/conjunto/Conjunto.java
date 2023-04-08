@@ -117,8 +117,16 @@ public class Conjunto {
 
 
     public int mayor() {
+        int mayor = -1;
+        if(numElementos>0){
+            Nodo actual = inicio;
+            while (actual!=null){
+            if (actual.getDato()>mayor){mayor= actual.getDato();}
+            actual=actual.getSiguiente();
+            }
+        }
         // Completar
-        return 0;   // Línea puesta para evitar error. Eliminarla al codificar el método
+        return mayor;   // Línea puesta para evitar error. Eliminarla al codificar el método
     }
 
     public Conjunto subconjunto(int inferior, int superior) {
