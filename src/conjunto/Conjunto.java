@@ -137,17 +137,20 @@ public class Conjunto {
             superior=inferior;
             inferior= aux;
         }
-        //comprobar el primero
-        while(actual!=null&& actual.getDato()<=superior){}
-        //if dato >= inferior -- > insertar en sub
-        //if dato <= superior -- > insertar en sub
-        // Completar
+        while(actual!=null && actual.getDato()<=superior){
+            if(actual.getDato()>=inferior){
+                int elem= actual.getDato();
+                sub.insertar(elem);
+            }
+            actual=actual.getSiguiente();
+        }
         return sub;
     }
 
     public boolean equals(Conjunto conjunto) {
+       boolean flag = true;
         // Completar
-        return true;   // Línea puesta para evitar error. Eliminarla al codificar el método
+        return flag;
     }
 
 
