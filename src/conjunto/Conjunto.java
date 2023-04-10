@@ -99,9 +99,7 @@ public class Conjunto {
 
 
     public int[] toArray() {
-
-            int enteros[];
-            enteros = new int[numElementos];
+           int[] enteros = new int[numElementos];
         if(numElementos>0) {
             int p = 0;
             Nodo actual = inicio;
@@ -149,11 +147,20 @@ public class Conjunto {
 
     public boolean equals(Conjunto conjunto) {
        boolean flag = true;
-        // Completar
+       if(this.numElementos!=conjunto.numElementos){
+           flag=false;
+       }else{
+           Nodo act1= this.inicio;
+           Nodo act2= conjunto.inicio;
+           while(act1!=null && act2!=null && flag){
+               if(act1.getDato()!=act2.getDato()){  flag=false; }
+               act1=act1.getSiguiente();
+               act2=act2.getSiguiente();
+
+           }
+       }
         return flag;
     }
-
-
 
 
 }
