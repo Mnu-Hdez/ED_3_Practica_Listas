@@ -12,7 +12,7 @@ public class PruebasConjunto {
        test.insertar(-2);
         System.out.println("Conjunto de trabajo:");
        test.mostrar();
-       int array[]= test.toArray();
+       int[] array= test.toArray();
         System.out.print("El array contiene: ");
        for(int i=0;i<array.length;i++){
            System.out.print(array[i]+"  ");
