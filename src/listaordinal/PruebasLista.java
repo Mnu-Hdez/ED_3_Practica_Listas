@@ -40,6 +40,7 @@ public class PruebasLista {
         System.out.println("Se han obtenido "+mayores.getNumElementos()+" productos con precio mayor a 100 € por unidad");
         mayores.mostrar();
         System.out.println();
+
         FacturaBib facturabib = new FacturaBib("88888888A","08/08/2008");
         Producto arm1 = new Producto("Armario",385,5);
         Producto cam1=new Producto("Cama",255,3);
